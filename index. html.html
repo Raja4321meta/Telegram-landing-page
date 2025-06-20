@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join Prediction Ka Raja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradient 10s ease infinite;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @keyframes gradient {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      background-color: #007bff;
+      color: #ffffff;
+      font-size: 1.4rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-decoration: none;
+      margin-top: 15px;
+      animation: pulse 1.5s infinite;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background-color: #0056b3;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    #timer {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://i.postimg.cc/zDg1ST3P/Screenshot-2025-06-20-02-51-09-723-com-miui-gallery.jpg" alt="Channel Logo" class="logo" />
+
+  <h1>Join Prediction Ka Raja</h1>
+  
+  <p>
+    🎯 Daily Cricket Match Predictions<br>
+    🏏 Toss, Pitch Report & Best Picks<br>
+    🧠 Expert Analysis-Based Predictions<br>
+    📊 Covering All Major Leagues & Series
+  </p>
+
+  <a href="https://t.me/+WoJcDB7WwkkwNmI9" target="_blank" class="btn">Join Now</a>
+
+  <div id="timer">Redirecting in 10 seconds...</div>
+
+  <script>
+    let seconds = 10;
+    const timerElement = document.getElementById('timer');
+    const redirectURL = "https://t.me/+WoJcDB7WwkkwNmI9";
+
+    const countdown = setInterval(() => {
+      seconds--;
+      timerElement.textContent = `Redirecting in ${seconds} seconds...`;
+
+      if (seconds <= 0) {
+        clearInterval(countdown);
+        window.location.href = redirectURL;
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
